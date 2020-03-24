@@ -10,7 +10,7 @@ $( document ).ready(function() {
         let arr = url.split('?');
 
         if(arr.length === 1) {
-            return url + '?' + key + '=' + val;
+            url = url + '?' + key + '=' + val;
         }
         else if(arr.length === 2) {
             let params = arr[1].split('&');
